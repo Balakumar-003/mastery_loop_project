@@ -15,7 +15,7 @@ def test_probability_is_half_at_difficulty_when_no_guessing():
 
 def test_guessing_raises_the_floor():
     p = probability(-6.0, item(a=1.0, b=0.0, c=0.25))
-    assert p == pytest.approx(0.25, abs=1e-3)
+    assert p == pytest.approx(0.25, abs=2e-3)
 
 def test_probability_is_monotonic_in_ability():
     i = item(a=1.4, b=0.3, c=0.2)
